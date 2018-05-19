@@ -30,23 +30,19 @@
 
         <div id = botones >
 
-          <button id="boton">Enviar</button>
-          <input type = "text" id = "userName" placeholder = "ingresa tu nombre">
+          <input type = "text" id = "name"  placeholder = "ingresa tu nombre" value = "" />
+          <button id="boton2" onclick = "getValue()">Enviar</button>
+          <p id = "mensaje bienvenida" > </p>
 
         </div>
 
         <script>
-            (function(){
-                var saludo = function(){
-                    alert("Saludo");
-                };
-                
-                var boton = document.getElementById("boton");
-                boton.addEventListener('click', saludo); 
-                    
-                      
-                
-             }())
+           
+             function getValue(){
+                 var mensaje = document.getElementById("mensaje bienvenida");
+                 var userName = document.getElementById("name"). value;
+                 mensaje.innerHTML= "Hola " + userName;
+             }
 
         </script>
 
