@@ -28,11 +28,29 @@
 
         <h2>¿Sabes tanto como creías de Laboratoria?</h2>
 
-        <input type = "nombre" id = "userName" placeholder = "ingresa tu nombre">
+        <div id = botones >
 
-      </div>
+          <button id="boton">Enviar</button>
+          <input type = "text" id = "userName" placeholder = "ingresa tu nombre">
 
-      <button id="boton-submit">Enviar</button>
+        </div>
+
+        <script>
+            (function(){
+                var saludo = function(){
+                    alert("Saludo");
+                };
+                
+                var boton = document.getElementById("boton");
+                boton.addEventListener('click', saludo); 
+                    
+                      
+                
+             }())
+
+        </script>
+
+    </div>
 
     </header>
 
